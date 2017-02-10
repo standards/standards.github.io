@@ -1,0 +1,95 @@
+---
+layout: home
+title: Home
+description: Make open-source better, together.
+permalink: /
+---
+
+<div class="mini-section">
+  <div class="section container features">
+    <div class="row">
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-broadcast"></span>
+        <h3>Community-wide</h3>
+        <p>Community plays a fundamental part on this initiative as we all need to define, discuss, construct and evolve the way we all want to work with each other, and all in a single place for such a huge community. For that to happen, given that projects are mainly hosted on GitHub, it is there where this initiative takes place.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-organization"></span>
+        <h3>Community-driven</h3>
+        <p>As we all come from different places with different backgrounds, we all conceive things differently. We as a community need certain ground rules to let creativity do its job above them. For that to happen, a [GitHub Organization](https://standards.github.io/) was created, to organize this initiative to its core.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-bookmark"></span>
+        <h3>Community-promoted</h3>
+        <p>Any standard compliant project should be proud of supporting this initiative. For that reason, there are beautiful badges compliant projects can include in their README file not only to show which standard does it apply in order to guide any outsider but also to show off!</p>
+      </div>
+    </div>
+    <div class="last row">
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-zap"></span>
+        <h3>Make better, make faster!</h3>
+        <p>Standards enables you to bring up-to-speed developers. Reading standards would get them understand better the basics of a project in terms of structure, inner-workings, and what does it provides to others for a correct usage.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-verified"></span>
+        <h3>Get some assurance</h3>
+        <p>Standards is the best way to get assurance as it provides a level of commitment when they are complied and validated. For that to work, standards need to cover what guidelines provide and also include mandatory requirements.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <span class="mega-octicon octicon-checklist"></span>
+        <h3>Improve ourselves</h3>
+        <p>Having a standard way of doing things and have a collaborative environment to validate their compliance can only result on better understanding of our own products.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mini-section join" style="overflow: hidden;">
+  <div class="container">
+    <h1 id="join-the-initiative">Join the initiative</h1>
+    <h3 class="lead-graf">Join others develop how to work together.</h3>
+  </div>
+
+  <div class="full-screen org-members">
+    {% for member in site.github.organization_members %}
+    <a href="https://github.com/{{ member.login }}" class="animate-in">
+      <img class="img-thumbnail" src="https://github.com/{{member.login}}.png?s=80" alt="{{ member.login }}"/>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="get-started" class="mini-section">
+  <div class="container">
+    <h1>Get started</h1>
+    <h3 class="lead-graf">Be sure to have a user on GitHub. <a href="https://github.com/join?source=standards.github.io" target="_blank">Create your user here</a>.</h3>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Understand how it works</h3>
+        <p><a href="learn" target="_blank">Learn</a> the actual process to use and create standards.</p>
+        <p>Be sure to understand that everything starts from the <a href="https://github.com/standards/meta" target="_blank">meta</a> standard, the mother and father of any standard.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Explore existing standards</h3>
+        <p><a href="explore">Take a look</a> at the available standards for you to apply for validation or help evolve.</p>
+        <p>Remember to always direct any question or suggestion to any standard's GitHub Issues.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Create a standard</h3>
+        <p>Learn more about how to <a href="learn#create-a-new-standard">create a new standard</a> to contribute to this initiative.</p>
+        <p>Please try to <a href="explore">find an existing standard</a> that you may use or help evolve before you start the process of creating one.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact-a-human" class="full-width human">
+  <div class="container mini-section">
+    <span class="mega-octicon octicon-person"></span>
+    <h3>Talk to a human</h3>
+    <p>Reach out through Gitter at <a href="https://gitter.im/Standards/Lobby">Standards/Lobby</a> to talk to the standards team and to get feedback from other standards supporters.</p>
+  </div>
+</div>

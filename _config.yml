@@ -1,0 +1,17 @@
+# global settings
+title: "GitHub Standards"
+description: "Open-source set of standards to embrace collaboration"
+url: "https://standards.github.io"
+#url: "http://localhost:4000"
+analytics_account: "UA-91790856-1"
+
+# build settings
+exclude: ["vendor", "bower.json", "README.md", "package.json"]
+markdown: kramdown
+gems:
+  - jekyll-seo-tag
+
+sass:
+  style: :compressed
+
+excluded_repos: ["standards.github.io", "resources", "meta"]

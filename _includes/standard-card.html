@@ -1,0 +1,16 @@
+<div class="col-md-4 grid-item" data-standard-name="{{ include.repo.name }}" data-standard-language="{{ include.repo.language | default:'nolang' }}">
+    <div class="panel panel-{{ include.repo.language | downcase | default: 'default' }}" id="panel-{{include.repo.name | downcase | slug}}">
+        <div class="panel-heading">
+            <a href="https://github.com/standards/{{repo.name}}">{{ include.repo.name }}</a>
+            {% if include.pinned %}
+            <span class="octicon octicon-pin pull-right"></span>
+            {% endif %}
+        </div>
+        <div class="panel-body">
+            <p>{{ include.repo.description }}</p>
+        </div>
+        {% if include.repo.language != null %}
+        <div class="panel-footer">{{ include.repo.language }}</div>
+        {% endif %}
+    </div>
+</div>

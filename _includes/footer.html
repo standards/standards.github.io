@@ -1,0 +1,27 @@
+    <footer class="container">
+      <div class="site-footer clearfix">
+        <ul class="site-footer-links right no-style-list">
+          <li><a href="https://gitter.im/Standards/Lobby">Contact Us</a></li>
+        </ul>
+		
+        <a href="https://github.com">
+          <img src="assets/img/github-logo.png"/>
+        </a>
+		
+		<p>Not associated with GitHub, it just happen to be the best place to define standards.</p>
+      </div>
+    </footer>
+    <script src="assets/vendor/anchor-js/anchor.min.js"></script>
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    {% if page.url == "/explore" %}
+      <script src="assets/js/explore.js"></script>
+    {% elsif page.url == "/learn" %}
+    <script src="assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="assets/js/learn.js"></script>
+    {% elsif page.url == "/" %}
+      <script src="assets/js/home.js"></script>
+    {% endif %}
+  </body>
+</html>
+<!-- Proudly powered by GitHub Pages ~ Generated {{ site.time }} -->

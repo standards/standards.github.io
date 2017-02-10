@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{site.url}}" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  {% include analytics.html %}
+  {% seo %}
+</head>
+
+<body id="{{ page.title | downcase | slug }}" class="{{ page.layout }}">
+
+  <div class="full-width olives">
+    <div class="navbar">
+        <div class="container">
+            <a href="{{site.url}}"><img class="logo" src="assets/img/header-logo.png" alt="GitHub Standards"></a>
+            <ul>
+              <li><a href="learn" title="Learn more about GitHub Standards">Learn more</a></li>
+              <li><a href="explore" title="Explore existent standards">Explore standards</a></li>
+              <li><a href="#contact-a-human">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- .full-width here gets closed on support-page.html and home.html layouts -->

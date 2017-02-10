@@ -1,0 +1,21 @@
+<div class="mini-section">
+    <div class="container">
+        <h6 class="no-matches">No matches.</h6>
+        <div class="row grid">
+            {% assign result = site.github.public_repositories | where:"name","meta" %}
+            {% for meta in result limit: 1 %}
+                {% include standard-card.html repo=meta pinned=true %}
+            {% endfor %}
+
+            <!-- Go through the organization public repos -->
+            {% for repo in site.github.public_repositories %}
+
+                <!-- Exclude the repos configured on _config.yml -->
+                {% unless site.excluded_repos contains repo.name %}
+                    {% include standard-card.html repo=repo %}
+                {% endunless %}
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
