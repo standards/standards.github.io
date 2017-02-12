@@ -648,3 +648,8 @@ li {
   .features .feature h3 { margin: 0; }
   .site-footer { padding: 20px; }
 }
+
+@media (min-width: 768px) {
+  .features .feature h3 { margin: 0; }
+  .features .feature .mega-octicon { margin-top: 0; }
+}
