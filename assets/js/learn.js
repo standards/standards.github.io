@@ -12,12 +12,14 @@
 
         var checkHash = function() {
             var hash = window.location.hash.slice(1).split('/');
-            $('html, body').animate({
-                scrollTop: $("h2#"+hash[0]).offset().top - 100
-            }, 1000);
-            $("h2#"+hash[0]).addClass('highlight border-top').nextUntil('h2').addClass('highlight').last().addClass('border-bottom');
-            if(hash.length > 1) {
-                $('h2#'+hash[0]).nextAll('section').find('.nav-tabs a[href="#'+hash[1]+'"]').tab('show');
+            if(hash[0] !== "") {
+                $('html, body').animate({
+                    scrollTop: $("h2#"+hash[0]).offset().top - 100
+                }, 1000);
+                $("h2#"+hash[0]).addClass('highlight border-top').nextUntil('h2').addClass('highlight').last().addClass('border-bottom');
+                if(hash.length > 1) {
+                    $('h2#'+hash[0]).nextAll('section').find('.nav-tabs a[href="#'+hash[1]+'"]').tab('show');
+                }
             }
         };
 
