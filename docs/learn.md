@@ -6,17 +6,17 @@ description: "Here is what you need to know about this initiative to get you sta
 ---
 ## Table of content
 
-### [Why standards?](learn#why-standards)
+### [Why standards?](learn#why-standards) {#why-standards-title}
 
-### [What is a standard?](learn#what-is-a-standard)
+### [What is a standard?](learn#what-is-a-standard) {#what-is-a-standard-title}
 
-### [Where does standards live?](learn#where-does-standards-live)
+### [Where does standards live?](learn#where-does-standards-live) {#where-does-standards-live-title}
 
-### [Create a new standard](learn#create-a-new-standard)
+### [Create a new standard](learn#create-a-new-standard) {#create-a-new-standard-title}
 
-### [Evolve an existent standard](learn#evolve-an-existent-standard)
+### [Evolve an existent standard](learn#evolve-an-existent-standard) {#evolve-an-existent-standard-title}
 
-### [Complying with a standard](learn#complying-with-a-standard)
+### [Complying with a standard](learn#complying-with-a-standard) {#complying-with-a-standard-title}
 
 ## Why standards?
 The open-source community is huge, we all come from different places from different backgrounds, with different ways to resolve problems.
