@@ -6,6 +6,16 @@
             {% for meta in result limit: 1 %}
                 {% include standard-card.html repo=meta pinned=true %}
             {% endfor %}
+            
+            <div class="col-md-4 grid-item" data-standard-name="create" data-standard-language="nolang">
+                <div class="alert alert-info" id="panel-create" role="alert" style="padding:0;">
+                    <div class="panel-body" style="padding: 14px;">
+                        <p>
+                            Learn the process of creating a new standard <a href="learn#create-a-new-standard">here</a>. Once you are ready, go ahead and propose a new standard <a href="https//github.com/Standards/meta/issues/new">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Go through the organization public repos -->
             {% for repo in site.github.public_repositories %}
