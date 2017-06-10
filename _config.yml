@@ -1,8 +1,8 @@
 # global settings
 title: "GitHub Standards"
 description: "Make open-source better, together. Collaboration on conventions towards world-wide community standards."
-#url: "https://standards.github.io"
-url: "http://localhost:4000"
+url: "https://standards.github.io"
+#url: "http://localhost:4000"
 repository: Standards/standards.github.io
 analytics_account: "UA-91790856-1"
 
