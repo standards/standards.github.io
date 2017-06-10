@@ -2,11 +2,11 @@
     <div class="container">
         <h6 class="no-matches">No matches.</h6>
         <div class="row grid">
-            {% assign result = site.github.public_repositories | where:"name","meta" %}
+            {% assign result = site.pages | where:"title","Meta" %}
             {% for meta in result limit: 1 %}
-                {% include standard-card.html repo=meta pinned=true %}
+            {% include standard-card.html page=meta pinned=true %}
             {% endfor %}
-            
+
             <div class="col-md-4 grid-item" data-standard-name="create" data-standard-language="nolang">
                 <div class="alert alert-info" id="panel-create" role="alert" style="padding:0;">
                     <div class="panel-body" style="padding: 14px;">
@@ -18,12 +18,12 @@
             </div>
 
             <!-- Go through the organization public repos -->
-            {% for repo in site.github.public_repositories %}
+            {% for page in site.pages %}
 
-                <!-- Exclude the repos configured on _config.yml -->
-                {% unless site.excluded_repos contains repo.name %}
-                    {% include standard-card.html repo=repo %}
-                {% endunless %}
+            <!-- Exclude the repos configured on _config.yml -->
+            {% unless site.excluded_pages contains page.title %}
+            {% include standard-card.html page=page %}
+            {% endunless %}
 
             {% endfor %}
         </div>

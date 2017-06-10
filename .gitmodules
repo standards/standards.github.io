@@ -1,0 +1,3 @@
+[submodule "standard/meta"]
+	path = standard/meta
+	url = https://github.com/standards/meta.git

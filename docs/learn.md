@@ -1,7 +1,7 @@
 ---
 title: Learn
 layout: support-page
-permalink: /learn
+permalink: /learn/
 description: "Here is what you need to know about this initiative to get you started. This initiative <b>relies on the community</b>, we couldn't do it without you pitching in to write down and apply a common way to work within your team and with other teams."
 ---
 ## Table of content
@@ -43,14 +43,14 @@ Also, **a standard need to define at least certain mandatory rules to be applied
 ## Where does standards live?
 This initiative strongly relies on GitHub capabilities, such like Issues, Releases and README files. That’s because GitHub hosts the largest number of open-source projects represented by a GitHub repository of files that also relies on the same GitHub capabilities. 
 
-Specifically, **a standard is represented by a repository in the Standards organization** which includes markdown files with at least a README.md file to describe the standard purpose among other topics. Within that repository, **a standard uses the Issues GitHub capability to bring everyone together in discussion** about the standard itself and to request the standard’s maintainers to validate certain project complies with it. Also, **a standard necessarily needs to release new versions when it gets updated using GitHub Releases** in order to keep track its evolution and to identify if projects complies with the latest version.
+Specifically, **a standard is represented by a repository** which includes markdown files with at least a README.md file to describe the standard purpose and mandatory/optional requirements. Inside a repository, **a standard uses the Issues GitHub capability to bring everyone together in discussion** about the standard itself and to request the standard’s maintainers to validate certain project complies with it. Also, **a standard necessarily needs to release new versions when it gets updated using GitHub Releases** in order to keep track its evolution and to identify if projects complies with the latest version.
 
-As mentioned, a repository needs to follow certain rules to be able to create a complete and usable standard. Well, that sounded like a whole standard by itself so it made sense to create a standard that if complied with and validated by the standards initiative maintainers, a standard could be created. That standard to create standards is called `meta` standard, meta meaning self-referential.
+As mentioned, a repository needs to follow mandatory/optional requirements to be able to create a complete and usable standard. Which is why there is a standard called `Meta` to create new standards, meta meaning self-referential.
 
 ## Create a new standard
 Hopefully this initiative get you exited enough to try to create a new standard. Remember that community is very important to make this happen so please give it a try and whatever question that may arise please do not hesitate to contact us on Gitter [Shere](https://gitter.im/standards/Lobby).
 
-Here are the process for which a standard needs to go through to see the light of day and be available on the Standards organization for others to find and apply on their projects:
+Here are the official steps to create a standard to be part of this initiative:
 
 {% include steps/create_standard.html %}
 

@@ -1,8 +1,9 @@
 # global settings
 title: "GitHub Standards"
 description: "Make open-source better, together. Collaboration on conventions towards world-wide community standards."
-url: "https://standards.github.io"
-#url: "http://localhost:4000"
+#url: "https://standards.github.io"
+url: "http://localhost:4000"
+repository: Standards/standards.github.io
 analytics_account: "UA-91790856-1"
 
 # build settings
@@ -10,14 +11,17 @@ exclude: ["vendor", "bower.json", "README.md", "package.json"]
 markdown: kramdown
 gems:
   - jekyll-seo-tag
-
-sass:
-  style: :compressed
+  - jekyll-github-metadata
 
 defaults:
   - scope:
       path: ""
+      type: pages
     values:
-      image: "https://standards.github.io/resources/images/gh-standards-logo.png"
+      layout: support-page
+      permalink: /:path/
 
-excluded_repos: ["standards.github.io", "resources", "meta"]
+sass:
+  style: :compressed
+
+excluded_pages: ["Explore", "Learn", "Meta", "Not found", "Home", "Styles"]

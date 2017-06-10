@@ -17,4 +17,4 @@ description: "These are all the available standards available for compliance or 
     </div>
 </div>
 
-{% include repo-list.html %}
+{% include standards-list.html %}
