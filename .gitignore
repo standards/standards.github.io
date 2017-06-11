@@ -11,3 +11,4 @@ assets/vendor/**/*.txt
 .sass-cache
 .env
 tmp/
+npm-debug.log*
