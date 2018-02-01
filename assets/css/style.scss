@@ -66,14 +66,18 @@ h1 {
   margin-bottom: .5em;
 }
 
+.support-page h2 {
+  margin-bottom: 0;
+}
+
 h2 {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.5;
 
   &.highlight {
-    padding-bottom: 0.83em;
-    margin-bottom: 0;
+    padding: 0.4em 0 0.2em 0;
+    padding-left: 0.4em !important;
   }
 }
 
@@ -221,6 +225,32 @@ li {
   opacity: .65;
 }
 
+/* page layouts */
+/* -------------------------------------------------------------------------- */
+body {
+  &.standard-page {
+   	.standard-info {
+   		text-align: center;
+		padding-bottom: 0px;
+		h1 {
+			margin-bottom: 0px;
+			a {
+				margin-left: 0.2em;
+			}
+		}
+		h3 {
+			margin: 0 0 0.1em;
+		}
+		h5 {
+			margin: 0px;
+		}
+	}
+	p.badge {
+		text-align: center;
+	}
+  }
+}
+
 /* section */
 /* -------------------------------------------------------------------------- */
 
@@ -349,10 +379,18 @@ li {
   padding-top: 30px;
   height: 345px;
   overflow: hidden;
+	
+	a:hover {
+    text-decoration: none;
+  }
 }
 
 /* Custom nav-tabs */
 /* -------------------------------------------------------------------------- */
+
+.nav-tabs-wrapper {
+  margin-bottom: 1em;
+}
 
 .tab-content {
   border-bottom: 1px solid #ddd;
@@ -542,7 +580,7 @@ li {
 
 /* Supporting page */
 /* -------------------------------------------------------------------------- */
-{% for lang in site.data.languages %}
+{% for lang in site.data.categories %}
 .panel-{{lang.name | downcase}} {
   border-color: {{lang.main_color}};
 
@@ -655,7 +693,8 @@ li {
   .support-page .full-width.olives { background-size: 140%; }
   .features .feature .mega-octicon { margin-top: 0; }
   .features .feature h3 { margin: 0; }
-  .site-footer { padding: 20px; }
+  .site-footer { padding: 0.3em }
+	.standard-page .full-width.olives { background-size: 140%; }
 }
 
 @media (min-width: 768px) {
