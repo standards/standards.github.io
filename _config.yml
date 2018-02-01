@@ -18,7 +18,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: support-page
+      layout: standard-page
       permalink: /:path/
 
 sass:
