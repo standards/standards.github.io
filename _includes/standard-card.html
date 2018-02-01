@@ -1,5 +1,5 @@
-<div class="col-md-4 grid-item" data-standard-name="{{ include.page.title }}" data-standard-language="{{ include.page.language | default:'nolang' }}">
-    <div class="panel panel-{{ include.page.language | downcase | default: 'default' }}" id="panel-{{include.page.title | downcase | slug}}">
+<div class="col-md-4 grid-item" data-standard-name="{{ include.page.title }}" data-standard-category="{{ include.page.category | default:'nocat' }}">
+    <div class="panel panel-{{ include.page.category | downcase | default: 'default' }}" id="panel-{{include.page.title | downcase | slug}}" style="text-align: center;">
         <div class="panel-heading">
             <a href="{{include.page.url}}">{{ include.page.title }}</a>
             {% if include.pinned %}
@@ -9,8 +9,8 @@
         <div class="panel-body">
             <p>{{ include.page.description }}</p>
         </div>
-        {% if include.page.language != null %}
-        <div class="panel-footer">{{ include.page.language }}</div>
+        {% if include.page.category != null %}
+        <div class="panel-footer">{{ include.page.category }}</div>
         {% endif %}
     </div>
 </div>
