@@ -4,28 +4,28 @@
         <div class="row grid">
             {% assign result = site.pages | where:"title","Meta" %}
             {% for meta in result limit: 1 %}
-            {% include standard-card.html page=meta pinned=true %}
+                {% include standard-card.html page=meta pinned=true %}
             {% endfor %}
-
-            <div class="col-md-4 grid-item" data-standard-name="create" data-standard-category="nocat">
-                <div class="alert alert-info" id="panel-create" role="alert" style="padding:0;">
-                    <div class="panel-body" style="padding: 14px;">
-                        <p>
-                            Learn the process of creating a new standard <a href="learn#create-a-new-standard">here</a>. Once you are ready, go ahead and propose a new standard <a href="https//github.com/Standards/meta/issues/new">here</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
             <!-- Go through the organization public repos -->
             {% for page in site.pages %}
 
-            <!-- Exclude the repos configured on _config.yml -->
-            {% unless site.excluded_pages contains page.title %}
-            {% include standard-card.html page=page %}
-            {% endunless %}
+                <!-- Exclude the repos configured on _config.yml -->
+                {% unless site.excluded_pages contains page.title %}
+                    {% include standard-card.html page=page %}
+                {% endunless %}
 
             {% endfor %}
+
+            <div class="col-md-4 grid-item" data-standard-name="create" data-standard-category="nocat">
+                <div class="alert alert-info" id="panel-create" role="alert" style="padding:0; text-align: center;">
+                    <div class="panel-body" style="padding: 14px;">
+                        <p>
+                            Learn the process of creating a new standard <a href="learn#create-a-new-standard">here</a>. Once you are ready, go ahead and propose a new standard <a href="https//git.autodesk.com/Standards/meta/issues/new">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
