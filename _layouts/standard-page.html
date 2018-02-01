@@ -1,0 +1,22 @@
+{% include header.html %}
+
+</div>
+  <div class="container standard-page">
+    <div class="mini-section standard-info">
+      <h1>
+        {{ page.title }} <a href="{{page.repository_url}}" target="_blank" title="Go to repository"><span class="mega-octicon octicon-repo"></span></a><a href="{{page.repository_url}}/issues/new" target="_blank" title="Submit an issue for this standard"><span class="mega-octicon octicon-issue-opened"></span></a>
+      </h1>
+      <h3 class="description lead-graf">{{ page.description }}</h3>
+      {% if page.category != null %}
+      <h5>Category: {{ page.category }}</h5>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <script src="{{site.url}}/assets/js/standard.js"></script>
+
+{% include footer.html %}
