@@ -10,7 +10,7 @@ description: "These are all the available standards available for compliance or 
             <div id="radioBtn" class="btn-group">
                 <input id="filter" type="text" class="btn-sm" placeholder="Type to search...">
                 <a class="btn btn-primary btn-sm active" data-toggle="searchby" data-title="standard-name">By name</a>
-                <a class="btn btn-primary btn-sm notActive" data-toggle="searchby" data-title="standard-language">By language</a>
+                <a class="btn btn-primary btn-sm notActive" data-toggle="searchby" data-title="standard-category">By category</a>
             </div>
             <input type="hidden" name="searchby" id="searchby" value="standard-name">
         </div>
