@@ -1,11 +1,11 @@
 {
-  "name": "standards.github.io",
+  "name": "openstandards.guide",
   "version": "1.0.0",
-  "homepage": "https://standards.github.io/",
+  "homepage": "https://openstandards.guide/",
   "authors": [
     "Standards"
   ],
-  "description": "GitHub Standards",
+  "description": "Open Standards",
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
