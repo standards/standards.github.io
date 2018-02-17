@@ -376,9 +376,12 @@ body {
 .org-members {
   margin-right: -55px;
   margin-left: -55px;
-  padding-top: 30px;
   height: 345px;
   overflow: hidden;
+
+  img {
+    width: 4.3em;
+  }
 	
 	a:hover {
     text-decoration: none;

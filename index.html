@@ -50,11 +50,7 @@ permalink: /
   </div>
 
   <div class="full-screen org-members">
-    {% for member in site.github.organization_members %}
-    <a href="https://github.com/{{ member.login }}" class="animate-in">
-      <img class="img-thumbnail" src="https://avatars.githubusercontent.com/{{member.login}}?s=80" alt="{{ member.login }}"/>
-    </a>
-    {% endfor %}
+    <!-- Loaded by ajax in home.js -->
   </div>
 </div>
 

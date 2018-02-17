@@ -7,7 +7,7 @@
         animateOutOffset = 200;
         $animateIn.addClass('pre-animate');
         $animateOut.addClass('pre-animate-out');
-        return $(window).scroll(function(e) {
+        $(window).scroll(function(e) {
             var bottomScrollPosition, windowHeight, windowScrollPosition;
             windowHeight = $(window).height();
             windowScrollPosition = $(window).scrollTop();
@@ -23,5 +23,14 @@
                 }
             });
         });
+
+        $.getJSON('https://standards.now.sh/stargazers.json', function(data) {
+            var items = [];
+            $.each(data, function(key, val) {
+                $('<a href="https://github.com/'+val+'" class="animate-in" target="_blank">'+
+                    '<img class="img-thumbnail" src="https://avatars.githubusercontent.com/'+val+'?s=80" alt="'+val+'" title="'+val+'"/>'
+                +'</a>').appendTo(".org-members");
+            });
+        })
     })(jQuery);
 }).call(this);
