@@ -1,2 +1,2 @@
-# standards.github.io
+# web
 Introductory website to this initiative
