@@ -24,7 +24,7 @@
             });
         });
 
-        $.getJSON('https://standards.now.sh/stargazers.json', function(data) {
+        $.getJSON('https://open-standards.now.sh/api/stargazers', function(data) {
             var items = [];
             $.each(data, function(key, val) {
                 $('<a href="https://github.com/'+val+'" class="animate-in" target="_blank">'+

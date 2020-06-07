@@ -12,3 +12,4 @@ assets/vendor/**/*.txt
 .env
 tmp/
 npm-debug.log*
+.jekyll-cache
